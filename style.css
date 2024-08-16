@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: #ddf9c1;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    transition: all 0.5s ease-out;
+    border: 0px solid #ddf9c1;
+}
+#cursor_blur{
+    height: 400px;
+    width: 400px;
+    background-color: #ddf9c141;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(70px);
+    z-index: 9;
+    transition: all 2.5s ease-out;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+nav h4:hover{
+    color: #f8dda4;
+}
+#logo{
+    height: 50px;
+}
+header video{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    object-fit: cover;
+    top: 0;
+    z-index: -10;
+}
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+#panel1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rebeccapurple; */
+    z-index: 10;
+}
+#hero-content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hero-content h1{
+    font-size: 100px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    position: relative;
+}
+#hero-content h1::before{
+    content: "Eat. Drink. Play.";
+    color: #813405;
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    -webkit-text-stroke: 1px #f8dda4;
+    z-index: -1;
+}
+#hero-content h3{
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+#hero-content p{
+    width: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+#panel2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+#scroll{
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 100px;
+}
+#scroll_in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#scroll_in h4{
+    display: inline-block;
+    font-size: 110px;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #ddf9c1;
+    color: transparent;
+    margin-right: 20px;
+    transition: all linear 0.5s;
+}
+#scroll_in h4:hover{
+    color: #813405;
+}
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#about_content{
+    width: 60%;
+    text-align: center;
+}
+#about_content h3{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+#about_content p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+#about img{
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    object-position: right;
+    border-radius: 10px;
+}
+
+#panel3{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 10;
+}
+.card{
+    height: 550px;
+    width: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    background-color: #ddf9c1;
+    z-index: 10;
+    position: relative;
+    padding: 20px;
+}
+#card1{
+    background-image: url(https://images.unsplash.com/photo-1620124302502-9143f273d860?q=80&w=1498&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    transition: all 1s ease;
+}
+#card1:hover{
+    background-image: none;
+}
+#card2{
+    background-image: url(https://images.unsplash.com/photo-1488923566472-4b2d13a4af3b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    transition: all 1s ease;
+}
+#card2:hover{
+    background-image: none;
+}
+#card3{
+    background-image: url(https://plus.unsplash.com/premium_photo-1664298415497-60325b13618f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    transition: all 1s ease;
+}
+#card3:hover{
+    background-image: none;
+}
+.cardtext{
+    position: relative;
+    opacity: 0;
+}
+.cardtext h4{
+    margin-top: 30%;
+    font-size: 32px;
+    color: #813405;
+    font-weight: 900;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.cardtext p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #813405;
+    font-weight: 200;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    position: relative;
+}
+.card:hover .cardtext{
+    opacity: 1;
+}
+.card:hover{
+    transform: rotate3d(-1,1,0,20deg);
+}
+
+#greendiv{
+    height: 30vh;
+    width: 100%;
+    color: #ddf9c1;
+    background: linear-gradient( to right bottom, #d45113 , #813e13);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    z-index: 10;
+}
+#greendiv img{
+    height: 30vh;
+    width: 15%;
+    filter: invert(100%);
+    mix-blend-mode: screen;
+    position: relative;
+    object-fit: cover;
+}
+#greendiv h4{
+    font-size: 20px;
+    line-height: 40px;
+    width: 50%;
+    position: relative;
+    color: white;
+    font-weight: 900;
+}
+#panel4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+}
+#panel4 #images{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#imagediv{
+    height: 70%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1521012012373-6a85bade18da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMGFuZCUyMGRyaW5rcyUyMGNhZmV8ZW58MHx8MHx8fDA%3D);
+    background-position: center;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#dots{
+    height: 40px;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+#panel4 #text{
+    height: 80%;
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#text h4{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+#text P{
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+#orderonline{
+    height: 50px;
+    width: 35%;
+    background-color: black;
+    border: 2px solid #ddf9c1;
+    border-radius: 30px;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#orderonline h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-top: 0;
+    font-family:  Arial, sans-serif;
+}
+#panel5{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#panel5 img{
+    height: 40px;
+    position: absolute;
+    z-index: 10;
+}
+#colun1{
+    top: 20vh;
+    left:15vw;
+}
+#colun2{
+    bottom: 20vh;
+    right:15vw;
+}
+#reviews{
+    height: 40vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reviews h4{
+    font-size: 24px;
+    font-weight: 900;
+    width: 60%;
+    line-height: 35px;
+    text-align: center;
+}
