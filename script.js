@@ -2,6 +2,8 @@ let crcr = document.querySelector("#cursor")
 let crcr_blur = document.querySelector("#cursor_blur")
 let crcr_cng = document.querySelectorAll(".crcr_cng ")
 let cards = document.querySelectorAll(".card")
+let p6cards = document.querySelectorAll(".p6card")
+let p6h4 = document.querySelector("#p6heading")
 
 document.addEventListener("mousemove",function(dets){
     crcr.style.left= dets.x-25 +"px"
@@ -15,28 +17,37 @@ crcr_cng.forEach(element=>{
         console.log("hello")
         crcr.style.transform = "scale(3.5)"
         crcr.style.backgroundColor = "transparent"
-        crcr.style.border= "0.1px solid #ddf9c1"
+        crcr.style.border= "0.1px solid #fefae0"
     })
     element.addEventListener("mouseleave",()=>{
         crcr.style.transform = "scale(1)"
-        crcr.style.backgroundColor = "#ddf9c1"
+        crcr.style.backgroundColor = "#fefae0"
         crcr.style.border= "none"
     })
 })
 
 cards.forEach(eve=>{
     eve.addEventListener("mouseenter",()=>{
-        crcr.style.borderColor = "#d45113"
+        crcr.style.borderColor = "#fefae0"
         eve.classList.add("hovered")
     })
     eve.addEventListener("mouseleave",()=>{
-        crcr.style.borderColor = "#ddf9c1"
+        crcr.style.borderColor = "#fefae0"
         cards.classList.remove("hovered")
     })
 })
 
+p6cards.forEach(eve=>{
+    eve.addEventListener("mouseenter",()=>{
+        p6h4.style.webkitTextStroke = "1px #fefae0"
+    })
+    eve.addEventListener("mouseleave",()=>{
+        p6h4.style.webkitTextStroke = "1px white"
+    })
+})
+
 gsap.to("nav",{
-    backgroundColor: "#813405",
+    backgroundColor: "#d4a373",
     duration: 0.5,
     height: "80px",
     scrollTrigger:{
@@ -58,4 +69,33 @@ gsap.to("#main",{
         scrub: 3
     }
 })
-
+gsap.from("#colun1",{
+    y:-70,
+    scrollTrigger:{
+        trigger:"#colun1",
+        scroller:"body",
+        start:"top 40%",
+        end:"top 20%",
+        scrub:3
+    }
+})
+gsap.from("#colun2",{
+    y:80,
+    scrollTrigger:{
+        trigger:"#colun2",
+        scroller:"body",
+        start:"top 90%",
+        end:"top 70%",
+        scrub:3
+    }
+})
+gsap.from("#p6heading",{
+    y:100,
+    scrollTrigger:{
+        trigger:"#p6heading",
+        scroller:"body",
+        start:"top 100%",
+        end:"top 70%",
+        scrub:1
+    }
+})
