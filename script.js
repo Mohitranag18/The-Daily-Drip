@@ -4,6 +4,39 @@ let crcr_cng = document.querySelectorAll(".crcr_cng ")
 let cards = document.querySelectorAll(".card")
 let p6cards = document.querySelectorAll(".p6card")
 let p6h4 = document.querySelector("#p6heading")
+let simg = document.querySelector("#imagediv img")
+let dots = document.querySelectorAll("#dots .dot")
+
+let i= 1;
+dots.forEach((dot,index)=>{
+    dot.addEventListener("click",()=>{
+        i = index +1;
+        updateImage();
+        updateDots();
+    })
+})
+
+function updateImage(){
+    simg.src = `images/simg${i}.avif`
+}
+
+function updateDots(){
+    dots.forEach((dot, index)=>{
+        if(index+1 == i){
+            dot.style.backgroundColor = "#d4a373"
+            dot.style.transform = "scale(1.4)"
+        }
+        else{
+            dot.style.backgroundColor = "white"
+            dot.style.transform = "scale(1)"
+        }
+    });
+}
+setInterval(function(){
+    updateDots();
+    updateImage();
+    i = (i%3)+1;
+},4000);
 
 document.addEventListener("mousemove",function(dets){
     crcr.style.left= dets.x-25 +"px"
@@ -14,7 +47,6 @@ document.addEventListener("mousemove",function(dets){
 
 crcr_cng.forEach(element=>{
     element.addEventListener("mouseenter",()=>{
-        console.log("hello")
         crcr.style.transform = "scale(3.5)"
         crcr.style.backgroundColor = "transparent"
         crcr.style.border= "0.1px solid #fefae0"
