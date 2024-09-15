@@ -16,7 +16,7 @@ html, body{
     
 }
 body{
-    width:100%;
+    width:100vw;
     overflow-x: hidden;
 }
 #cursor{
@@ -41,7 +41,7 @@ body{
 }
 nav{
     height: 100px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -53,6 +53,11 @@ nav h4{
 }
 nav h4:hover{
     color: white;
+}
+#menuicon{
+    font-size: 24px;
+    display: none;
+    color: #fefae0;
 }
 #logo{
     height: 50px;
@@ -79,7 +84,7 @@ nav h4:hover{
 }
 #mainvid{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     object-fit: cover;
     top: 0;
@@ -88,15 +93,16 @@ nav h4:hover{
 }
 #main{
     height: auto;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0);
     position: relative;
 }
 #panel1{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: rebeccapurple; */
@@ -108,7 +114,7 @@ nav h4:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;position: relative;
 }
 #hero-content h1{
     font-size: 100px;
@@ -136,13 +142,14 @@ nav h4:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
-#hero-content h3{
+#herocontp h3{
     font-size: 28px;
     font-weight: 900;
-    margin-bottom: 15px;
+    margin: 15px;
 }
-#hero-content p{
+#herocontp p{
     width: 60%;
     font-size: 16px;
     font-weight: 400;
@@ -223,7 +230,12 @@ nav h4:hover{
     border-radius: 10px;
     filter: saturate(0.7) hue-rotate(-2) brightness(1.2);
 }
-
+#aboutbot{
+    position: relative;
+}
+#imgaboutbot{
+    display: none;
+}
 #panel3{
     height: 100vh;
     width: 100%;
@@ -380,6 +392,7 @@ nav h4:hover{
     border-radius: 50%;
     background-color: white;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 #panel4 #text{
     height: 80%;
@@ -527,7 +540,7 @@ nav h4:hover{
 }
 #panel7{
     height: 50vh;
-    width: 100%;
+    width: 100vw;
     color: #000;
     background-color: #d4a373;
     position: relative;
