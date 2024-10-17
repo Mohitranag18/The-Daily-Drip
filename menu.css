@@ -1,0 +1,12 @@
+#mainvid{
+    object-position: center;
+}
+#hero-content h1::before{
+    content: "Savor Every Sip.";
+    color: white;
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    -webkit-text-stroke: 2px black;
+    z-index: -1;
+}

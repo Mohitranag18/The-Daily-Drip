@@ -45,18 +45,18 @@ document.addEventListener("mousemove",function(dets){
     crcr_blur.style.top= (dets.y-200)+"px"
 })
 
-crcr_cng.forEach(element=>{
-    element.addEventListener("mouseenter",()=>{
-        crcr.style.transform = "scale(3.5)"
-        crcr.style.backgroundColor = "transparent"
-        crcr.style.border= "0.1px solid #fefae0"
-    })
-    element.addEventListener("mouseleave",()=>{
-        crcr.style.transform = "scale(1)"
-        crcr.style.backgroundColor = "#fefae0"
-        crcr.style.border= "none"
-    })
-})
+// crcr_cng.forEach(element=>{
+//     element.addEventListener("mouseenter",()=>{
+//         crcr.style.transform = "scale(3.5)"
+//         crcr.style.backgroundColor = "transparent"
+//         crcr.style.border= "0.1px solid #fefae0"
+//     })
+//     element.addEventListener("mouseleave",()=>{
+//         crcr.style.transform = "scale(1)"
+//         crcr.style.backgroundColor = "#fefae0"
+//         crcr.style.border= "none"
+//     })
+// })
 
 cards.forEach(eve=>{
     eve.addEventListener("mouseenter",()=>{
