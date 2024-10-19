@@ -131,3 +131,53 @@ gsap.from("#p6heading",{
         scrub:1
     }
 })
+
+// logic for menu section
+let coffee = document.querySelector("#coffee");
+let snacks = document.querySelector("#snacks");
+let desserts = document.querySelector("#desserts");
+let coffeeItems = document.querySelector("#coffee-items");
+let snacksItems = document.querySelector("#snacks-items");
+let dessertsItems = document.querySelector("#desserts-items");
+let item_head = 1;
+
+coffee.addEventListener("click", () => {
+    item_head = 1;
+    updateDisplay();
+});
+
+snacks.addEventListener("click", () => {
+    item_head = 2;
+    updateDisplay();
+});
+
+desserts.addEventListener("click", () => {
+    item_head = 3;
+    updateDisplay();
+});
+
+function updateDisplay() {
+    // Reset styles
+    coffee.style.backgroundColor = '';
+    snacks.style.backgroundColor = '';
+    desserts.style.backgroundColor = '';
+    coffeeItems.style.display = 'none';
+    snacksItems.style.display = 'none';
+    dessertsItems.style.display = 'none';
+
+    // Show the appropriate section and change background color
+    if (item_head === 1) {
+        coffeeItems.style.display = '';
+        coffee.style.backgroundColor = '#6F4E37';
+    } else if (item_head === 2) {
+        snacksItems.style.display = '';
+        snacks.style.backgroundColor = '#6F4E37';
+    } else if (item_head === 3) {
+        dessertsItems.style.display = '';
+        desserts.style.backgroundColor = '#6F4E37';
+    }
+}
+updateDisplay();
+
+
+

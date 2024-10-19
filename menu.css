@@ -47,21 +47,30 @@
     width: 33%;
     border-bottom: 2px solid white;
     z-index: 9;
+    cursor: pointer;
 }
 #coffee{
     position: relative;
     border-radius: 2rem 0 0 0;
-    background-color: #6F4E37;
+    &:hover{
+        background-color: #A38764;
+    }
 }
 #snacks{
     position: relative;
     width: 34%;
     border-left: 2px solid white;
+    &:hover{
+        background-color: #A38764;
+    }
 }
 #desserts{
     position: relative;
     border-radius: 0 2rem 0 0;
     border-left: 2px solid white;
+    &:hover{
+        background-color: #A38764;
+    }
 }
 .menu-items{
     width: 100%;
