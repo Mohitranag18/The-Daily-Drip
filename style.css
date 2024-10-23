@@ -62,7 +62,7 @@ nav h4:hover{
 #logo{
     height: 50px;
 }
-#orderonlinenav{
+#booktablenav{
     height: 40px;
     width: 150px;
     background-color: black;
@@ -73,13 +73,13 @@ nav h4:hover{
     justify-content: center;
     align-items: center;
 }
-#orderonlinenav h4{
+#booktablenav h4{
     font-weight: 400;
     color: #fefae0;
     margin-top: 0;
     font-family:  Arial, sans-serif;
 }
-#orderonlinenav:hover h4{
+#booktablenav:hover h4{
     color: white;
 }
 #mainvid{
@@ -117,7 +117,7 @@ nav h4:hover{
     text-align: center;position: relative;
 }
 #hero-content h1{
-    font-size: 100px;
+    font-size: 80px;
     margin-top: 50px;
     margin-bottom: 20px;
     font-weight: 900;
@@ -412,7 +412,7 @@ nav h4:hover{
     line-height: 40px;
     margin-top: 20px;
 }
-#orderonline{
+#booktable{
     height: 50px;
     width: 35%;
     background-color: black;
@@ -424,14 +424,14 @@ nav h4:hover{
     justify-content: center;
     align-items: center;
 }
-#orderonline h4{
+#booktable h4{
     font-size: 16px;
     font-weight: 400;
     color: #fefae0;
     margin-top: 0;
     font-family:  Arial, sans-serif;
 }
-#orderonline:hover h4{
+#booktable:hover h4{
     color: white;
 }
 #panel5{
@@ -634,7 +634,7 @@ a:hover{
         color:#fefae0;
         display: none;
     }
-    #orderonlinenav{
+    #booktablenav{
         display: none;
     }
     #menuicon{
@@ -775,11 +775,11 @@ a:hover{
         font-size: 14px;
         line-height: 18px;
     }
-    #orderonline{
+    #booktable{
         height: 40px;
         width: 70%;
     }
-    #orderonline h4{
+    #booktable h4{
         font-size: 16px;
     }
     #panel5{

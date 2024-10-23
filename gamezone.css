@@ -1,0 +1,102 @@
+#hero-content h1::before{
+    content: "Explore, Play, Enjoy!";
+    color: white;
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    -webkit-text-stroke: 2px black;
+    z-index: -1;
+}
+/* game categories section */
+#panel3{
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+.games-section{
+    height: auto;
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    border: 2px solid white;
+}
+.games-head{
+    background-color: #6F4E37;
+    height: 4rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem 2rem 0 0;
+    border-bottom: 2px solid white;
+}
+.games-cards{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.game-card{
+    height: 25rem;
+    width: 25%;
+    border-radius: 1rem;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    &:hover .card-head{
+        background-color: #A38764;
+    }
+}
+.card-head{
+    height: 4rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #C2B280;
+}
+.card-content{
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-content img{
+    height: 10rem;
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    align-self: center;
+    object-fit: cover;
+}
+.games-cards p{
+    margin-bottom: 10px;
+    color: #6F4E37;
+}
+.games-cards h4{
+    color: rgb(48, 114, 255);
+    cursor: pointer;
+    &:hover{
+        color: blue;
+    }
+}

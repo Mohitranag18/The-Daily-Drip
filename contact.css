@@ -1,0 +1,9 @@
+#hero-content h1::before{
+    content: "Get in Touch!";
+    color: white;
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    -webkit-text-stroke: 2px black;
+    z-index: -1;
+}
