@@ -7,3 +7,10 @@
     -webkit-text-stroke: 2px black;
     z-index: -1;
 }
+#panel2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
