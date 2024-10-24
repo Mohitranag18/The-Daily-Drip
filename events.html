@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Events</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="events.css">
@@ -38,8 +38,69 @@
             </div>
         </div>
 
+        <!-- Events list section -->
         <div id="panel2">
-            <h1>Updates Comming Soon...</h1>
+            <div class="events-section">
+                <div class="events-head">
+                    <div id="Upcoming" class="h-ele">
+                        <h2>Upcoming Events</h2>
+                    </div>
+                    <div id="Previous" class="h-ele">
+                        <h2>Previous Events</h2>
+                    </div>
+                </div>
+                                <!-- menu item section for coffee -->
+                <div class="events-items" id="upcoming-items">
+                    <div class="item-box">
+                        <img src="images/dewalievent.jpg">
+                        <h3>Diwali Game Night - Celebrate with Fun!</h3>
+                        <p>Celebrate the festival of lights with an exciting night of board games, carom, and card games! Join us for a special Diwali-themed event with snacks, music, and prizes. Don't miss out on the fun!
+                        </p>
+                        <h4>Book Now</h4>
+                    </div>
+                </div>
+                                <!-- menu item section for desserts -->
+                <div class="events-items" id="previous-items">
+                    <div class="item-box">
+                        <img src="images/chessevent.jpg">
+                        <h3>Independence Day Game Tournament</h3>
+                        <p>This Independence Day, we hosted an exciting tournament featuring chess, carom, and more. With thrilling matches and grand prizes, it was a day to remember!</p>
+                        <h4>View Details</h4>
+                    </div>
+                    <div class="item-box">
+                        <img src="images/holievent.jpg">
+                        <h3>Holi Fun Fest - Colors, Games & Music!</h3>
+                        <p>Our Holi Fun Fest was a blend of colors, games, and live performances! With card games, chess matches, and a live artist performance, the event was packed with excitement and festive cheer.</p>
+                        <h4>View Details</h4>
+                    </div>
+                    <div class="item-box">
+                        <img src="images/newyearevent.jpg">
+                        <h3>New Year's Eve Party & Open Mic</h3>
+                        <p>We rang in the new year with a night of gaming, music, and open mic performances! Guests showcased their talents while enjoying chess, card games, and an unforgettable countdown to midnight.
+                        </p>
+                        <h4>View Details</h4>
+                    </div>
+                </div>
+
+                <!-- Button for Reservation -->
+                <div class="reserve-btn">
+                    <a href="booking.html"><button>Reserve Your Spot</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- resevation button and subscription -->
+        <div id="panel3">
+                <!-- Subscribe Section -->
+                <div class="subscribe-section">
+                    <h3>Subscribe for New Event Updates</h3>
+                    <form class="subscribe-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <button id="subscribeButton">Subscribe Now</button>
+                        <div id="successMessage" class="hidden">You have successfully subscribed!</div>
+                    </form>
+                </div>          
         </div>
 
         <!-- footer section -->
@@ -76,6 +137,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script.js"></script>
-    <script src="gamezone.js"></script>
+    <script src="events.js"></script>
 </body>
 </html>
