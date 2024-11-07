@@ -9,4 +9,122 @@
 }
 #panel2{
     width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+.container-head{
+    width: 90%;
+    border: 2px solid white;
+    border-radius: 2rem;
+    width: 90%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.container-head-cards{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 8rem;
+    width: 30%;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: #6F4E37;
+    text-align: center;
+    border: 2px solid white;
+    &:hover{
+        background-color: #C2B280;
+    }
+}
+.container-main{
+    border-radius: 2rem;
+    width: 90%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section {
+    width: 60vw;
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 2px solid #ddd;
+}
+
+.contact-section h3 {
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.contact-form input {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 0.3rem;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.contact-form textarea{
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 0.3rem;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.contact-form select{
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 0.3rem;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.contact-form select option{
+    background-color: black;
+}
+.contact-form button {
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: transparent;
+    color: #ddd;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 2px solid #ddd;
+}
+
+.contact-form button:hover {
+    background-color: #dddddd25;
+}
+#successMessage {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border-radius: 0.3rem;
+    text-align: center;
+    display: none; /* Hide by default */
+}
+.hidden {
+    display: none;
 }

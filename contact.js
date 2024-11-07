@@ -1,11 +1,11 @@
-// Form submission simulation for demonstration
-const form = document.getElementById('contactForm');
-const confirmationMessage = document.getElementById('confirmationMessage');
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    confirmationMessage.style.display = 'block';
+const contactButton = document.getElementById('contactButton');
+const successMessage = document.getElementById('successMessage')
+contactButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the form from submitting and reloading the pag
+    // Show the success message
+    successMessage.style.display = 'block'
+    // Hide the message after 3 seconds
     setTimeout(() => {
-        confirmationMessage.style.display = 'none';
-        form.reset();
-    }, 3000);
+        successMessage.style.display = 'none';
+    }, 2000);
 });
