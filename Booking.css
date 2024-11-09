@@ -124,6 +124,24 @@
     text-align: center;
     display: none; /* Hide by default */
 }
+#successMessage2 {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border-radius: 0.3rem;
+    text-align: center;
+    display: none; /* Hide by default */
+}
+#successMessage3 {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border-radius: 0.3rem;
+    text-align: center;
+    display: none; /* Hide by default */
+}
 .hidden {
     display: none;
 }
