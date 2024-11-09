@@ -67,8 +67,7 @@
 }
 #panel3{
     width: 100%;
-    height: 100vh;
-    padding-bottom: 20vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -85,12 +84,14 @@
 
 }
 .contact-section {
+    height: 100%;
     width: 60vw;
     background-color: transparent;
     padding: 2rem;
     border-radius: 0.5rem;
     text-align: center;
     border: 2px solid #ddd;
+    position: relative;
 }
 
 .contact-section h3 {
@@ -153,6 +154,7 @@
     border-radius: 0.5rem;
     text-align: center;
     border: 2px solid #ddd;
+    position: relative;
 }
 .social-links h3{
     color: #ddd;

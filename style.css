@@ -548,6 +548,7 @@ nav h4:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
 }
 footer{
     height: 80%;

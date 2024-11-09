@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     gap: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 0;
 }
 .container-head{
     width: 90%;
@@ -38,12 +38,10 @@
     width: 30%;
     padding: 2rem;
     border-radius: 2rem;
-    background-color: #6F4E37;
+    background-color: #C2B280;
     text-align: center;
     border: 2px solid white;
-    &:hover{
-        background-color: #C2B280;
-    }
+    
 }
 .container-main{
     border-radius: 2rem;
@@ -53,6 +51,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid white;
 }
 .contact-section {
     width: 60vw;
