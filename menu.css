@@ -17,6 +17,7 @@
     z-index: 10;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 3rem;
 }
 .menu-section{
@@ -205,4 +206,81 @@
 }
 .special-cards h4{
     color: #6F4E37;
+}
+@media only screen and (max-width: 600px) {
+    .menu-head{
+        height: 3rem;
+    }
+    .h-ele h2{
+        font-size: 0.95rem;
+    }
+    .menu-items{
+        gap: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .item-box{
+        width: 43%;
+        height: auto;
+        padding: 0.5rem;
+    }
+    .item-box img{
+        height: 5rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .item-box h3{
+        font-size: 1rem;
+    }
+    .item-box p{
+        font-size: 0.7rem;
+        font-weight: 800;
+    }
+    .item-box h4{
+        font-size: 0.7rem;
+    }
+    .special-head{
+        height: 3rem;
+    }
+    .special-head h2{
+        font-size: 0.95rem;
+    }
+    .special-items{
+        gap: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .special-cards{
+        width: 43%;
+        height: auto;
+    }
+    .special-card-head{
+        height: 3rem;
+    }
+    .special-card-head h2{
+        font-size: 0.95rem;
+    }
+    .special-card-content{
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+    .special-card-content img{
+        height: 5rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .special-card-content h3{
+        font-size: 1rem;
+    }
+    .special-card-content p{
+        font-size: 0.7rem;
+        font-weight: 800;
+    }
+    .special-card-content h4{
+        font-size: 0.7rem;
+    }
+    #panel7{
+        margin-top: 2rem;
+    }
 }

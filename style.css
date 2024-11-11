@@ -787,7 +787,7 @@ a:hover{
         display: none;
     }
     #panel6{
-        height: 50vh;
+        height: 40vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -803,11 +803,12 @@ a:hover{
         font-size: 15px;
     }
     #panel7{
-        height: auto;
+        height: 55vh;
         width: 100vw;
+        margin-top: 2rem;
     }
     footer{
-        height: 65vh;
+        height: 100%;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -826,7 +827,7 @@ a:hover{
         width: 100%;
     }
     #list{
-        height: 55%;
+        height: 50%;
         width: 50%;
     }
     #list h4{
