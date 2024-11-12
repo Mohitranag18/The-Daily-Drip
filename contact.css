@@ -170,3 +170,54 @@
     color: white;
     font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+    #panel2{
+        margin-bottom: 5rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    .location{
+        width: 100%;
+    }
+    .location img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+    .contactinfo{
+        width: 100%;
+    }
+    .contactinfodiv{
+        display: flex;
+        flex-direction: column;
+    }
+    #panel3{
+        height: auto;
+    }
+    .contactinfodiv{
+        width: 100%;
+    }
+    .contact-section{
+        width: 100%;
+    }
+    #contactButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 1rem;
+        height: 3rem;
+    }
+    .social-links{
+        width: 100%;
+    }
+    .social-links ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

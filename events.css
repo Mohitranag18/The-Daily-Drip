@@ -14,6 +14,7 @@
     z-index: 10;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 3rem;
 }
 .events-section{
@@ -201,4 +202,53 @@
 
 .hidden {
     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .events-head{
+        height: 3rem;
+    }
+    .h-ele{
+        height: 3rem;
+    }
+    .events-items{
+        gap: 1rem;
+        padding-top: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+    .h-ele h2{
+        font-size: 0.95rem;
+    }
+    .item-box{
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+    .item-box img{
+        height: 8rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .item-box h3{
+        font-size: 1rem;
+    }
+    .item-box p{
+        font-size: 0.7rem;
+        font-weight: 800;
+    }
+    .item-box h4{
+        font-size: 0.7rem;
+    }
+    .reserve-btn{
+        height: 5rem;
+    }
+    .reserve-btn button{
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #panel3{
+        padding-top: 2rem;
+    }
 }

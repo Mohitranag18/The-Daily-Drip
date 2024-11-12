@@ -99,3 +99,46 @@
         color: blue;
     }
 }
+@media only screen and (max-width: 600px) {
+    .games-head{
+        height: 3rem;
+    }
+    .games-head h2{
+        font-size: 0.95rem;
+    }
+    .games-cards{
+        gap: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .game-card{
+        width: 43%;
+        height: auto;
+    }
+    .card-head{
+        height: 3rem;
+    }
+    .card-head h2{
+        font-size: 0.95rem;
+    }
+    .card-content{
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+    }
+    .card-content img{
+        height: 5rem;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .card-content h3{
+        font-size: 1rem;
+    }
+    .card-content p{
+        font-size: 0.7rem;
+        font-weight: 800;
+    }
+    .card-content h4{
+        font-size: 0.7rem;
+    }
+}
