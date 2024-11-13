@@ -131,3 +131,16 @@ gsap.from("#p6heading",{
         scrub:1
     }
 })
+
+let ham = 0;
+const hamburger = document.querySelector('#menuicon')
+hamburger.addEventListener('click',()=>{
+    if(ham === 0){
+        document.querySelector('.hamburgermenu').style.display = 'flex';
+        ham = 1;
+    }
+    else{
+        document.querySelector('.hamburgermenu').style.display = 'none';
+        ham = 0;
+    }
+})

@@ -48,6 +48,9 @@ nav{
     position: fixed;
     z-index: 99;
 }
+.hamburgermenu{
+    display: none;
+}
 nav h4{
     color:#fefae0;
 }
@@ -63,6 +66,17 @@ nav h4:hover{
     height: 50px;
 }
 #booktablenav{
+    height: 40px;
+    width: 150px;
+    background-color: black;
+    border: 2px solid #fefae0;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#booktablenav2{
     height: 40px;
     width: 150px;
     background-color: black;
@@ -631,6 +645,12 @@ a:hover{
     #logo{
         height: 30px;
     }
+    header{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
     nav h4{
         color:#fefae0;
         display: none;
@@ -638,13 +658,33 @@ a:hover{
     #booktablenav{
         display: none;
     }
+    #booktablenav2 h4{
+        font-size: 0.9rem;
+    }
     #menuicon{
         font-size: 24px;
         display: block;
+        cursor: pointer;
     }
     #cursor_blur{
         height: 200px;
         width: 200px;
+    }
+    .hamburgermenu{
+        width: 100vw;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        position: fixed;
+        padding-top: 100px;
+        padding-bottom: 1.5rem;
+        z-index: 98;
+        gap: 1.5rem;
+        background-color: #d4a373;
+        border-radius: 0 0 1rem 1rem;
+        border-bottom: 2px solid white;
+        transition: opacity 0.3s ease, transform 0.3s ease;
     }
     #panel1{
         height: 100vh;
